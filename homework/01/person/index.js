@@ -1,6 +1,6 @@
 const { Person } = require('./person');
 const { test } = require('./app');
 
-module.export = { 
+module.exports = { 
     Person, test 
 }
