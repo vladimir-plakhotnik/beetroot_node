@@ -31,7 +31,7 @@ function check(message, condition) {
 }
 
 async function writeFile(filename, content) {
-    await new Promise((resolve, reject) => {
+    return new Promise((resolve, reject) => {
         fs.writeFile(filename, `${content}\n`, err => {
             if(err) {
                 reject(err);
@@ -43,7 +43,7 @@ async function writeFile(filename, content) {
 }
 
 async function appendFile(filename, content) {
-    await new Promise((resolve, reject) => {
+    return new Promise((resolve, reject) => {
         fs.appendFile(filename, `${content}\n`, err => {
             if(err) {
                 reject(err);
@@ -108,4 +108,3 @@ if (module.parent) {
 } else {
     runAsModule();
 }
-
