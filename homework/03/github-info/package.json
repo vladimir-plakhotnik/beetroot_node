@@ -1,0 +1,12 @@
+{
+  "name": "github-info",
+  "version": "1.0.0",
+  "description": "Homework Node.js course",
+  "main": "index.js",
+  "keywords": ["node.js", "beetroot academy" ],
+  "author": "Vladimir Plakhotnik",
+  "license": "ISC",
+  "dependencies": {
+    "node-fetch": "^2.6.0"
+  }
+}
